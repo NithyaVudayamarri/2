@@ -1,0 +1,111 @@
+<html>
+    <head>   
+         <style>
+           
+        .container {
+            position: relative;
+            text-align: center;
+            color: black;
+          }
+          
+          .centered {
+            position: absolute;
+            left: 35%;
+          
+            
+          }
+        </style>
+    </head>
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Thank You for your Review!";
+      }
+      </script>
+    <body style="font-size: 20px;background-image: url('foodimage.jpg'); background-repeat :no-repeat;background-size: 1560px 1120px;color:white">
+               <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
+
+
+  <h1>Welcome to the Review Page! </h1>
+      
+  
+
+<section class="centered">
+
+  <form id="ratingsandReview">
+      <div class="form-group">
+          <label for="Enter Name">Your First Name</label><br>
+          <input type="your Name" class="form-control" id="YourName" placeholder="please Enter your  first name">
+        </div>
+        <br>
+        <div  class="form-group">
+          <label for="Enter Name">Your Last Name</label><br>
+          <input type="your Name" class="form-control" id="lastName" placeholder="please Enter your last name">
+        </div>
+        <br>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label><br>
+      <input type="email" class="form-control" id="EmailID" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">(We'll never share your these info with anyone else.)</small>
+    
+    </div>
+    <br>
+    <div>
+      <label for="Enter Name">Phone number</label> <br>
+      <select id="State" name="State">
+      <option value="None">None</option>
+      <option value="Missouri">Missouri</option>
+      <option value="Florida">Florida</option>
+      <option value="California">California</option>
+      <option value="NewYork">NewYork</option>
+      <option value="Chicago">Chicago</option>
+      <option value="Newark">Newark</option>
+      <option value="Alabama">Alabama</option>
+      <option value="Virginia">Virginia</option>
+      <option value="Arkansas">Arkansas</option>
+      <option value="Newada">Newada</option>
+      <option value="Ohio">Ohio</option>
+      <option value="Arizona">Arizona</option>
+      <option value="Hawaii">Hawaii</option>
+      <option value="Michigan">Michigan</option>
+      
+      
+      </select>
+     
+      <input type="your Name" class="form-control" id="number" placeholder="please Enter your phone Number">
+    
+    </div>
+   
+    <br>
+
+       <div>
+        <label>PLEASE LEAVE YOUR REVIEW HERE!</label>
+        <br>
+
+        <textarea id="comments" rows="6" cols="50">
+        
+        </textarea>
+        <br>
+        </div>
+    
+    
+    <br><button type="submit" value="submit"  onclick="myFunction()" >Submit</button>
+
+  </form>
+  <p id="demo"></p>
+    
+  
+  
+</section> 
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-database.js"></script> 
+         
+          <script src="init-firebase2.js"></script>
+
+
+</body>
+</html>
